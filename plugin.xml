@@ -119,8 +119,8 @@
             <source url="https://cdn.cocoapods.org/"/>
         </config>
         <pods use-frameworks="true">
-            <pod name="FirebaseAnalytics" spec="~> 4.2" />
-            <pod name="FirebaseMessaging" spec="~> 2.2" />
+            <pod name="Firebase/Analytics" spec="~> 4.2" />
+            <pod name="Firebase/Messaging" spec="~> 2.2" />
         </pods>
     </podspec>
    <!--  <framework src="FirebaseAuth" type="podspec" spec="~> 4.6.1" />
