@@ -3,7 +3,7 @@
 #import "AppDelegate.h"
 // @import Fabric;
 // @import Crashlytics;
-@import FirebaseInstanceID;
+//@import FirebaseInstanceID;
 @import FirebaseMessaging;
 @import FirebaseAnalytics;
 // @import FirebaseRemoteConfig;
