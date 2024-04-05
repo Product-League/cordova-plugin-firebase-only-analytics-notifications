@@ -111,9 +111,19 @@
     <source-file src="src/ios/FirebasePlugin.m" />
 
 <!--     <framework src="Fabric" type="podspec" spec="~> 1.9" />
-    <framework src="Crashlytics" type="podspec" spec="~> 3.12" /> -->
+    <framework src="Crashlytics" type="podspec" spec="~> 3.12" /> 
     <framework src="FirebaseAnalytics" type="podspec" spec="~> 4.2" />
-    <framework src="FirebaseMessaging" type="podspec" spec="~> 2.2" />
+    <framework src="FirebaseMessaging" type="podspec" spec="~> 2.2" />-->
+    
+		<framework custom="true" src="src/ios/Firebase/Analytics/GoogleAppMeasurement.framework" />
+		<framework custom="true" src="src/ios/Firebase/Analytics/MeasurementNanoPB.framework" />
+		<framework custom="true" src="src/ios/Firebase/Analytics/FirebaseCore.framework" />
+		<framework custom="true" src="src/ios/Firebase/Analytics/FirebaseAnalytics.framework" />
+		<framework custom="true" src="src/ios/Firebase/Analytics/GoogleUtilities.framework" />
+		<framework custom="true" src="src/ios/Firebase/Analytics/nanopb.framework" />
+		<framework custom="true" src="src/ios/Firebase/Analytics/FirebaseInstanceID.framework" />
+		<framework custom="true" src="src/ios/Firebase/Analytics/FirebaseCoreDiagnostics.framework" />
+		<framework custom="true" src="src/ios/Firebase/Messaging/FirebaseMessaging.framework" />
     <!--<podspec>
         <config>
             <source url="https://github.com/CocoaPods/Specs.git"/>
