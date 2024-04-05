@@ -115,8 +115,6 @@
     <framework src="FirebaseAnalytics" type="podspec" spec="~> 4.2" />
     <framework src="FirebaseMessaging" type="podspec" spec="~> 2.2" />-->
     
-		<framework custom="true" src="src/ios/Crashlytics/Crashlytics.framework" />
-		<framework custom="true" src="src/ios/Crashlytics/Fabric.framework" />
 		<framework custom="true" src="src/ios/Firebase/Analytics/GoogleAppMeasurement.framework" />
 		<framework custom="true" src="src/ios/Firebase/Analytics/MeasurementNanoPB.framework" />
 		<framework custom="true" src="src/ios/Firebase/Analytics/FirebaseCore.framework" />
