@@ -123,22 +123,10 @@
 		<framework custom="true" src="src/ios/Firebase/Analytics/nanopb.framework" />
 		<framework custom="true" src="src/ios/Firebase/Analytics/FirebaseInstanceID.framework" />
 		<framework custom="true" src="src/ios/Firebase/Analytics/FirebaseCoreDiagnostics.framework" />
-		<framework custom="true" src="src/ios/Firebase/Auth/GTMSessionFetcher.framework" />
-		<framework custom="true" src="src/ios/Firebase/Auth/FirebaseAuth.framework" />
 		<framework custom="true" src="src/ios/Firebase/Messaging/FirebaseMessaging.framework" />
-		<framework custom="true" src="src/ios/Firebase/Performance/GoogleToolboxForMac.framework" />
-		<framework custom="true" src="src/ios/Firebase/Performance/FirebasePerformance.framework" />
 		<framework custom="true" src="src/ios/Firebase/RemoteConfig/Protobuf.framework" />
 		<framework custom="true" src="src/ios/Firebase/RemoteConfig/FirebaseRemoteConfig.framework" />
-		<framework custom="true" src="src/ios/Firebase/RemoteConfig/FirebaseABTesting.framework" />    <!--<podspec>
-        <config>
-            <source url="https://github.com/CocoaPods/Specs.git"/>
-        </config>
-        <pods use-frameworks="true">
-            <pod name="FirebaseAnalytics" spec="~> 7.9" />
-            <pod name="FirebaseMessaging" spec="~> 7.9" />
-        </pods>
-    </podspec> -->
+		<framework custom="true" src="src/ios/Firebase/RemoteConfig/FirebaseABTesting.framework" />    
    <!--  <framework src="FirebaseAuth" type="podspec" spec="~> 4.6.1" />
     <framework src="FirebaseRemoteConfig" type="podspec" spec="~> 2.1.3" />
     <framework src="FirebasePerformance" type="podspec" spec="~> 1.1.3" />
