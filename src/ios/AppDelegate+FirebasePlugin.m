@@ -59,10 +59,10 @@
     [FIRMessaging messaging].delegate = self;
     // [END set_messaging_delegate]  
 #if defined(__IPHONE_10_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
-    // self.delegate = [UNUserNotificationCenter currentNotificationCenter].delegate;
+    self.delegate = [UNUserNotificationCenter currentNotificationCenter].delegate;
     NSLog(@"FirebasePlugin - Finished launching - Configure iOS >= 10");
     [UNUserNotificationCenter currentNotificationCenter].delegate = self;
-    [FIRMessaging messaging].remoteMessageDelegate = self;
+    //[FIRMessaging messaging].remoteMessageDelegate = self;
 #endif
 
     [[UIApplication sharedApplication] registerForRemoteNotifications];
