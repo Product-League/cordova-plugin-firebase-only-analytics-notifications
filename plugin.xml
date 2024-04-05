@@ -120,7 +120,7 @@
         </config>
         <pods use-frameworks="true">
             <pod name="FirebaseAnalytics" spec="~> 7.9" />
-            <pod name="FirebaseMessaging" spec="~> 2.2" />
+            <pod name="FirebaseMessaging" spec="~> 7.9" />
         </pods>
     </podspec>
    <!--  <framework src="FirebaseAuth" type="podspec" spec="~> 4.6.1" />
