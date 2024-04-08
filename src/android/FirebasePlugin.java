@@ -83,6 +83,7 @@ public class FirebasePlugin extends CordovaPlugin {
     this.cordova.getThreadPool().execute(new Runnable() {
       public void run() {
         Log.d(TAG, "Starting Firebase plugin");
+        FirebaseApp.initializeApp(context);
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(context);
         mFirebaseAnalytics.setAnalyticsCollectionEnabled(true);
         if (extras != null && extras.size() > 1) {
