@@ -623,9 +623,7 @@ public class FirebasePlugin extends CordovaPlugin {
       cordova.getThreadPool().execute(new Runnable() {
         public void run() {
             try {
-                FirebaseRemoteConfigValue value = namespace == null
-                        ? FirebaseRemoteConfig.getInstance().getValue(key)
-                        : FirebaseRemoteConfig.getInstance().getValue(key, namespace);
+                FirebaseRemoteConfigValue value = FirebaseRemoteConfig.getInstance().getValue(key);
                 callbackContext.success(value.asString());
             } catch (Exception e) {
                 Crashlytics.logException(e);
