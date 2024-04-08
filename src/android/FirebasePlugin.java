@@ -675,18 +675,15 @@ public class FirebasePlugin extends CordovaPlugin {
 
     private void setDefaults(final CallbackContext callbackContext, final JSONObject defaults, final String namespace) {
         cordova.getThreadPool().execute(new Runnable() {
-            public void run() {
-                try {
-                    if (namespace == null)
-                        FirebaseRemoteConfig.getInstance().setDefaults(defaultsToMap(defaults));
-                    else
-                        FirebaseRemoteConfig.getInstance().setDefaults(defaultsToMap(defaults), namespace);
-                    callbackContext.success();
-                } catch (Exception e) {
-                    Crashlytics.logException(e);
-                    callbackContext.error(e.getMessage());
-                }
-            }
+      		public void run() {
+        		try {
+          			FirebaseRemoteConfig.getInstance().setDefaults(defaultsToMap(defaults));
+          			callbackContext.success();
+        		} catch (Exception e) {
+          			Crashlytics.logException(e);
+          			callbackContext.error(e.getMessage());
+        		}
+      		}	
         });
     }
 
